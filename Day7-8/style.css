@@ -1,0 +1,14 @@
+.header
+{
+    width: auto;
+    background-color: #0B243B;
+}
+.header .logo_imf
+{
+    width: 46px;
+    height: 46px;
+}
+.header .link_imf
+{
+    float: right;
+}

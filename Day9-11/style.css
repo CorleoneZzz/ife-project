@@ -1,4 +1,300 @@
-body
+@font-face{
+    font-family: 'Montserrat-Light' ;
+    src: url("font/Montserrat-ExtraLight.ttf");
+}
+@font-face {
+    font-family: 'Montserrat-ExtraLight';
+   src: url("font/Montserrat-Light.ttf");
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,img {padding:0;margin:0;}/*ul li ol自带margin和padding*/
+h1,h2,h3,p{
+    font-family: Montserrat-ExtraLight;
+}
+.header-content
 {
+    color: #ffffff;
+    position: relative;
+    background: url("image/header.png") no-repeat;
+    /*background-size的cover特定值会保持图像本身的宽高比例，将图片缩放到正好完全覆盖定义背景的区域*/
+    background-size: cover;
+    /*background-size: 100%;*/
+    height: 990px;
+    width:auto;
+    z-index: 0;
+}
+.header-content:after
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: #141414;
+    opacity: 0.65;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+.header-content .title-content
+{
+    height: 218px;
+    width: 766px;
+    margin: 0 auto;
+    padding-top:208px;
+}
+.title-content h1
+{
+    text-align: center;
+    font-size: 62px;
+}
+.title-content p
+{
+    line-height: 32px;
+    text-align: center;
+    width: 766px;
+    height: 84px;
+    font-size: 20px;
+    opacity: 0.7;
+}
+.account
+{
+    border: solid 1px rgba(255,255,255,0.2);
+    width: 970px;
+    height: 250px;
+    border-radius: 2px;
+    margin: 104px auto;
+    padding-top:61px ;
+    text-align: center;
+    align-content: center;
+}
+.account p
+{
+    opacity: 0.3;
+    font-size: 12px;
+}
+.account form
+{
+    margin-top:45px ;
+}
+.account form input
+{
+    width: 292px;
+    height: 50px;
+    border-radius: 2px;
+    border: 1px solid #ffffff;
+    opacity: 0.1;
+    margin-right: 30px;
 
+}
+.account button
+{
+    width:125px;
+    height: 50px;
+    border-radius: 2px;
+    background-color: #ffff;
+
+}
+.section-content
+{
+    height: 710px;
+    width: auto;
+    color:#141414;
+}
+.section-content .section-title
+{
+    width:657px;
+    height: 143px;
+    margin:0 auto;
+    text-align: center;
+    align-content: center;
+    margin-top: 89px;
+}
+.section-content .section-title h3
+{
+    font-size: 14px;
+}
+.section-content .section-title h1
+{
+    font-size: 42px;
+
+}
+.section-content .exhibition
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1028px;
+    height:286px ;
+    margin: 0 auto;
+
+}
+.section-content .exhibition .item
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:425px;
+    height:90px;
+    margin-top: 85px;
+}
+.section-content .exhibition .icon
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 75px;
+}
+/*.section-content .exhibition .item1*/
+/*{*/
+    /*float: left;*/
+    /*margin-left: 292px;*/
+    /*margin-right: 179px;*/
+    /*width:425px;*/
+    /*height:90px;*/
+/*}*/
+/*.section-content .exhibition .item2*/
+/*{*/
+    /*float: right;*/
+    /*margin-right:320px ;*/
+    /*width:425px;*/
+    /*height:90px;*/
+/*}*/
+/*.section-content .exhibition .item3*/
+/*{*/
+    /*float: left;*/
+    /*margin-left: 277px;*/
+    /*margin-right: 179px;*/
+    /*width:425px;*/
+    /*height:90px;*/
+/*}*/
+/*.section-content .exhibition .item4*/
+/*{*/
+    /*float: right;*/
+    /*margin-right:296px ;*/
+    /*width:425px;*/
+    /*height:90px;*/
+/*}*/
+.china-content
+{
+    width: auto;
+    height: 800px;
+    position: relative;
+    background: url("image/section.png") no-repeat;
+    background-size: cover;
+    z-index: 0;/*增加遮罩*/
+    color: white;
+    overflow:hidden;/*不加的话父级将无法自动撑开，此部分将会因为子元素的float而失效，同样增加float可以解决此问题，但偶尔会影响布局*/
+
+}
+.china-content:after{
+    position: absolute;
+    content: "";
+    top:0;
+    left:0;
+    background-color: #141414;
+    opacity: 0.65;
+    z-index: -1;/*增加遮罩*/
+    width: 100%;
+    height: 100%;
+
+}
+.china-content .content-left
+{
+    float: left;
+    align-content:center;
+    margin-left: 316px;
+    margin-right: 135px;
+    margin-top: 183px;
+
+}
+.china-content .content-left h1
+{
+    width:366px;
+    height: 137px;
+    line-height: 52px;
+    font-size: 42px;
+    font-weight: normal;
+}
+.china-content .content-left p
+{
+    width:366px;
+    height: 130px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-top: 48px;
+    font-weight: normal;
+    opacity: 0.7;
+}
+.china-content .content-left .button1
+{
+    width: 240px;
+    height: 60px;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 58px;
+    display: inline-block;
+    text-align: center;
+    line-height: 60px;
+    color: #141414;
+    background: white;
+}
+.china-content .content-left .button2
+{
+    width: 240px;
+    height: 60px;
+    border-radius: 2px;
+    border: solid 1px rgba(255,255,255,0.3);
+    font-size: 12px;
+    font-weight: normal;
+    display: inline-block;
+    margin-left: 30px;
+    text-align: center;
+    line-height: 60px;
+}
+.china-content .content-left .button1 a:link,.china-content .content-left .button1 a:visited
+{
+    text-decoration: none;
+    color: #141414;
+
+}
+.china-content .content-left .button2 a:link,.china-content .content-left .button2 a:visited
+{
+    text-decoration: none;
+    color: white;
+}
+.china-content .content-right
+{
+    float: right;
+    padding-top: 104px;
+
+}
+.footer {
+    width: 100%;
+    height: 410px;
+    background-color: #141414;
+    color: #ffffff;
+
+}
+.footer-content
+{
+    margin: 0 auto;
+    width: 1000px;
+    height: 198px;
+}
+
+.footer-content li
+{
+    float: left;
+    width: 250px;
+    line-height: 26px;
+    list-style-type: none;
+
+}
+
+.footer-content a:link,.footer-content a:visited
+{
+    color: #ffffff;
+    opacity: 0.3;
+    text-decoration: none;
 }

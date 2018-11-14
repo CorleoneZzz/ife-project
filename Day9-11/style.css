@@ -403,7 +403,7 @@ h1,h2,h3,p{
 .person-content .person-img
 {
     width: 1028px;
-    margin: 0 auto;
+    margin: 0 auto;/*这样就不会随着拉伸到处乱跑了*/
     display: flex;
     flex-wrap: wrap;
 }
@@ -428,9 +428,6 @@ h1,h2,h3,p{
 {
     color: #ffffff;
     font-size: 20px;
-    /*position: absolute;*/
-    /*top:109px;*/
-    /*left:171px;*/
     z-index: 1;
 
 }
@@ -438,9 +435,6 @@ h1,h2,h3,p{
 {
     color: #ffffff;
     font-size: 12px;
-    /*position: absolute;*/
-    /*top:146px;*/
-    /*left:142px;*/
     opacity: 0.4;
     z-index: 1;
 
@@ -492,7 +486,7 @@ h1,h2,h3,p{
 }
 .footer-content a:link,.footer-content a:visited
 {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.3);/*这样就可以了，分开写hover无法消除透明度*/
     text-decoration: none;
 }
 .footer-content a:hover,.footer-content a:active

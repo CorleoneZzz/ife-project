@@ -1,14 +1,17 @@
 @font-face{
     font-family: 'Montserrat-Light' ;
-    src: url("font/Montserrat-ExtraLight.ttf");
+    src: url("font/Montserrat-Light.ttf");
 }
 @font-face {
     font-family: 'Montserrat-ExtraLight';
-   src: url("font/Montserrat-Light.ttf");
+    src: url("font/Montserrat-ExtraLight.ttf");
 }
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,img {padding:0;margin:0;}/*ul li ol自带margin和padding*/
 h1,h2,h3,p{
     font-family: Montserrat-ExtraLight;
+}
+.clear{
+    clear:both;
 }
 .header-content
 {
@@ -200,11 +203,12 @@ h1,h2,h3,p{
 }
 .china-content .content-left
 {
-    float: left;
+    position: absolute;
+    top:183px;
+    left:316px;
     align-content:center;
     margin-left: 316px;
     margin-right: 135px;
-    margin-top: 183px;
 
 }
 .china-content .content-left h1
@@ -244,7 +248,7 @@ h1,h2,h3,p{
     width: 240px;
     height: 60px;
     border-radius: 2px;
-    border: solid 1px rgba(255,255,255,0.3);
+    border: solid 1px rgba(255,255,255,0.2);
     font-size: 12px;
     font-weight: normal;
     display: inline-block;
@@ -265,9 +269,194 @@ h1,h2,h3,p{
 }
 .china-content .content-right
 {
-    float: right;
-    padding-top: 104px;
+    position: absolute;
+    top:104px;
+    right:0;
+}
+.project-content{
+    border: 1px solid rgba(0,0,0,0.2);
+    color: #141414;
+    width: 100%;
+    height: 480px;
+    padding-bottom: 80px;
+}
+.project-content h1{
+    font-size: 42px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 52px;
+    text-align: center;
+    margin-bottom: 85px;
+    margin-top: 99px;
+}
+.project-content .project-text
+{
+    overflow: hidden;
+    margin: 0 auto;
+    width: 1135px;
+    height: 275px;
+}
+.project-content .project-text .SL,.project-content .project-text .HERO,.project-content .project-text .PT
+{
+    float: left;
+    width: 265px;
+    text-align: center;
+    margin-left: 85px;
 
+}
+.project-content .project-text p
+{
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 24px;
+
+}
+.project-content .project-img
+{
+    height: 900px;
+    width: auto;
+    padding-left: 420px;
+    padding-right: 310px;
+    padding-top:118px;
+}
+.project-content .project-img .section1
+{
+    overflow: hidden;
+    width: 976px;
+    height: 350px;
+}
+.project-content .project-img .section2
+{
+    width: 976px;
+    height: 350px;
+    margin-top: 80px;
+
+}
+.project-content .project-img .section1 .img1
+{
+    float: left;
+    margin-right: 100px;
+}
+.project-content .project-img .section2 .img2
+{
+    float: right;
+    margin-left: 100px;
+}
+.project-content .project-img .section1 .text1
+{
+    width: 305px;
+    height: 238px;
+    margin-top: 78px;
+    float: right;
+
+}
+.project-content .project-img .section2 .text2
+{
+    width: 305px;
+    height: 238px;
+    margin-top: 67px;
+    float: left;
+}
+.project-content .project-img h2
+{
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 32px;
+    margin-bottom: 35px;
+    font-family: Montserrat-Light;
+}
+.project-content .project-img p
+{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 25px;
+}
+.person-content
+{
+    width: auto;
+    height: 1084px;
+    align-content: center;
+    text-align: center;
+    border: solid 1px rgba(0,0,0,0.2);
+
+}
+.person-content h2
+{
+    margin-top: 99px;
+    margin-bottom: 35px;
+    font-size: 42px;
+    font-weight: normal;
+    line-height: 52px;
+}
+.person-content p
+{
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 28px;
+}
+.project-content .section
+{
+    width: 1028px;
+    margin: 0 auto;
+}
+.person-content .person-img
+{
+    width: 1028px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.person-content .person-img .person,.person-content .person-img .person1
+{
+    width: 470px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.person-content .person-img .person1
+{
+    position: relative;
+    z-index: -1;
+    text-align: center;
+    align-content: center;
+}
+.person-content .person-img .span1
+{
+    color: #ffffff;
+    font-size: 20px;
+    /*position: absolute;*/
+    /*top:109px;*/
+    /*left:171px;*/
+    z-index: 1;
+
+}
+.person-content .person-img .span2
+{
+    color: #ffffff;
+    font-size: 12px;
+    /*position: absolute;*/
+    /*top:146px;*/
+    /*left:142px;*/
+    opacity: 0.4;
+    z-index: 1;
+
+
+}
+.person-content .person-img .person1:after
+{
+    position: absolute;
+    background: #141414;
+    opacity: 0.65;
+    z-index: 0;
+    content: "";
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
 }
 .footer {
     width: 100%;

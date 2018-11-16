@@ -8,8 +8,7 @@
     src: url('./font/ProximaNova-Semibold.otf');
 }
 h1, h2,h3,h4,p{font-family: ProximaNova-Semibold, Arial, Helvetica, sans-serif; font-weight: normal;}
-html,
-body {
+html, body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -48,16 +47,15 @@ body {
     background:#1d2531;
     width: 100px;
     height: 100%;
-    min-height:1020px;
+    /*min-height:1020px;*/
 }
 .menu-box
 {
     width: 220px;
     height: 100%;
-    min-height:1000px;
+    /*min-height:1000px;*/
     background:#222c3c;
     padding-left:30px;
-    padding-top: 20px;
 }
 .menu-box a
 {
@@ -131,15 +129,15 @@ body {
 .messages
 {
     height: 100%;
-    min-height: 80px;
-    min-width: 1380px;  /*宽度怎么算？*/
+    /*min-height: 80px;*/
+    min-width: 1230px;
     background-color: #ffffff;
 }
 .message-header
 {
     height: 80px;
-    width: auto;
-    border-bottom:1px solid  #2a3547 ;
+    width: 100%;
+    border:1px solid rgba(0, 0, 0, 0.05) ;
     position: relative;
 }
 .message-header h2
@@ -166,4 +164,12 @@ body {
 {
     font-size: 14px;
     color: #b5b5b5;
+}
+.message-content
+{
+
+}
+.message-content .content-left
+{
+    width: 400px;
 }

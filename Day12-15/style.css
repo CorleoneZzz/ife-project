@@ -1,0 +1,169 @@
+/* 引入字体 */
+@font-face {
+    font-family: 'ProximaNova-Regular';
+    src: url('./font/ProximaNova-Regular.otf');
+}
+@font-face {
+    font-family: 'ProximaNova-Semibold';
+    src: url('./font/ProximaNova-Semibold.otf');
+}
+h1, h2,h3,h4,p{font-family: ProximaNova-Semibold, Arial, Helvetica, sans-serif; font-weight: normal;}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}/*这里是关键，父级有百分比*/
+.flex-box
+{
+    display: flex;
+    width: 100%;
+    height: 100%;/*这里是关键，父级有百分比*/
+}
+.img-box
+{
+    width: 60px;
+    min-height:300px;
+    margin-left:20px ;
+}
+.img-box img
+{
+    margin-top:20px ;
+}
+.setting-box
+{
+    margin-left: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+}
+.setting-box img
+{
+    margin-left: 16px;
+}
+.sidebar
+{
+    background:#1d2531;
+    width: 100px;
+    height: 100%;
+    min-height:1020px;
+}
+.menu-box
+{
+    width: 220px;
+    height: 100%;
+    min-height:1000px;
+    background:#222c3c;
+    padding-left:30px;
+    padding-top: 20px;
+}
+.menu-box a
+{
+    text-decoration: none;
+    color: #b7c0cd;
+}
+.menu-box a:hover
+{
+    color:white!important;
+}
+.menu1
+{
+    width: 190px;
+    min-height: 230px;
+    position: relative;
+    border-bottom:3px solid  #2a3547 ;
+}
+.menu2
+{
+    width: 190px;
+    min-height: 195px;
+    position: relative;
+    border-bottom:3px solid  #2a3547 ;
+}
+.menu2 .book
+{
+    background: url("image/icons_1.png") no-repeat top left;
+    padding-left:27px;
+}
+.menu2 .tuto
+{
+    background: url("image/icons_2.png") no-repeat top left;
+    padding-left:27px;
+}
+.menu2 .stock
+{
+    background: url("image/icons_3.png") no-repeat top left;
+    padding-left:27px;
+}
+.menu2 .info
+{
+    background: url("image/icons_4.png") no-repeat top left;
+    padding-left:27px;
+}
+.menu3
+{
+    width: 190px;
+    min-height: 230px;
+    position: relative;
+    border-bottom:3px solid  #2a3547 ;
+}
+
+.menu1 .icon,.menu2 .icon,.menu3 .icon
+{
+    position: absolute;
+    top: 10px;
+    right: 0;
+
+}
+.menu-box h3
+{
+    color: #5b6779;
+    line-height: 40px;
+    font-size: 12px;
+}
+.menu-box p
+{
+    font-size: 14px;
+    line-height: 20px;
+}
+.messages
+{
+    height: 100%;
+    min-height: 80px;
+    min-width: 1380px;  /*宽度怎么算？*/
+    background-color: #ffffff;
+}
+.message-header
+{
+    height: 80px;
+    width: auto;
+    border-bottom:1px solid  #2a3547 ;
+    position: relative;
+}
+.message-header h2
+{
+    font-size: 24px;
+    line-height: 40px;
+    color: #354052;
+}
+.message-header .photo
+{
+    position: absolute;
+    top:11px;
+    right:31px;
+    width: 204px;
+    height: 58px;
+    background: url("image/dropdown.png") no-repeat center right;
+}
+.photo h3
+{
+    font-size: 16px;
+    color: #2399f1;
+}
+.photo p
+{
+    font-size: 14px;
+    color: #b5b5b5;
+}

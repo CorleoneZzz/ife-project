@@ -190,25 +190,54 @@ html, body {
     left:70px;
     color: #b5b5b5;
 }
-.message-content
-{
-
-}
-
 .message-content .content-left
 {
-    height: 100%;
+    height: auto;
     width: 400px;
+    overflow: hidden;
 }
-.content-left .message1
+.inner-box .search
 {
-    margin-top: 70px;
+   position: relative;
+}
+.inner-box .search input
+{
+    width: 340px;
+    height: 36px;
+    border-radius: 4px;
+    border: solid 1px #e5e8ee;
+    margin-top: 15px;
+    margin-left: 30px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #9fa9ba;
+    opacity: 0.8;
+}
+.inner-box .search img
+{
+    position: absolute;
+    top: 25px;
+    right: 40px;
+
+}
+.message-content .content-left .inner-box
+{
+    height: auto;
+    max-height: 856px;
+    width: 417px;/*滚动条默认宽度17px*/
+    overflow-y: scroll;
+}/*用父元素包裹住来让滚动条消失却实现滚动功能*/
+.inner-box .message1
+{
+    margin-top: 20px;
     padding-top: 15px;
     padding-left: 30px;
     width: 370px;
     height: 115px;
     position: relative;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2) ; ;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    /*border-right: 1px solid rgba(0, 0, 0, 0.2);*/
+    background: url("image/bluebg2.png") 355px 78px no-repeat;
 
 }
 .message1 .face
@@ -245,8 +274,80 @@ html, body {
 }
 .message1 .information p
 {
+    width: 310px;
+    height: 32px;
     font-family: ProximaNova-Regular;
     font-size: 14px;
     line-height: 19px;
     color: #585d68;
+}
+.message1 .information span
+{
+
+    position: absolute;
+    top:72px;
+    left: 363px;
+    line-height: 36px;
+    font-size: 14px;
+    color: #ffffff;
+}
+.inner-box .message2
+{
+    padding-top: 15px;
+    padding-left: 30px;
+    width: 370px;
+    height: 115px;
+    position: relative;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    /*border-right:1px solid rgba(0, 0, 0, 0.2);*/
+
+}
+.message2 .face
+{
+    float: left;
+    margin-right: 20px;
+    position: relative;
+}
+.message2 .name
+{
+    float: left;
+
+}
+.message2 .name p
+{
+    font-size: 16px;
+    color: #585d68;
+    margin-top: -3px;
+    margin-bottom: -3px;
+}
+.message2 .name span
+{
+    font-family: ProximaNova-Semibold;
+    font-size: 14px;
+    color: #b5b5b5;
+}
+.message2 .distance
+{
+    position: absolute;
+    top:19px;
+    right: 14px;
+}
+.message2 .information p
+{
+    width: 360px;
+    height: 32px;
+    font-family: ProximaNova-Regular;
+    font-size: 14px;
+    line-height: 19px;
+    color: #585d68;
+}
+.message2 .information span
+{
+
+    position: absolute;
+    top:72px;
+    left: 363px;
+    line-height: 36px;
+    font-size: 14px;
+    color: #ffffff;
 }

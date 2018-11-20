@@ -8,7 +8,7 @@
     src: url('./font/ProximaNova-Semibold.otf');
 }
 .clear{clear: both}
-h1, h2,h3,h4,p{font-family: ProximaNova-Semibold, Arial, Helvetica, sans-serif; font-weight: normal;}
+h1, h2,h3,h4,p,span{font-family: ProximaNova-Semibold, Arial, Helvetica, sans-serif; font-weight: normal;}
 html, body {
     margin: 0;
     padding: 0;
@@ -358,7 +358,6 @@ html, body {
     position: absolute;
     top: 81px;
     left: 400px;
-    padding-left: 97px;
     border-left: 1px solid rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
@@ -367,4 +366,87 @@ html, body {
     height: auto;
     max-height:856px ;
     overflow-y: scroll;
+}
+.content-right h3
+{
+    font-size: 16px;
+    color: #585d68;
+    display: inline-block;
+    margin-right: 9px;
+}
+.content-right p
+{
+    font-family: ProximaNova-Regular;
+    font-size: 14px;
+    line-height: 19px;
+    color: #585d68;
+}
+.content-right .message-today span,.content-right .message-tuesday span,.content-right .message-new span
+{
+
+    font-family: ProximaNova-Semibold;
+    font-size: 14px;
+    color: #7f8fa4;
+}
+.content-right .message-today
+{
+    height: auto;
+    padding: 8px 67px 18px 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    position: relative;
+}
+.content-right .message-tuesday
+{
+    height: auto;
+    padding: 8px 67px 18px 10px;
+    border-bottom: 1px solid rgba(35,153,241,0.4);
+    position: relative;
+}
+.content-right .right-message1
+{
+    position: relative;
+    padding-left: 87px;
+}
+.content-right .right-message1 img
+{
+    position: absolute;
+    top:14px;
+    left: 20px;
+}
+.content-right .right-message2
+{
+    position: relative;
+    padding-left: 87px;
+}
+.content-right .right-message2 img
+{
+    position: absolute;
+    top:14px;
+    left: 20px;
+}
+.content-right .divide-tuesday
+{
+    position: relative;
+    bottom: -20px;/*这样就随着内容的扩充而跟着定位了*/
+    left: 50%;
+    width: 80px;
+    height: 13px;
+    background: white;
+    font-size: 14px;
+    line-height: 19px;
+    color: #7f8fa4;
+    text-align: center;
+}
+.content-right .divide-new
+{
+    position: relative;
+    width: 130px;
+    height: 13px;
+    background: white;
+    font-size: 14px;
+    line-height: 19px;
+    color: #2399f1;
+    bottom: -20px;
+    left: 50%;
+    text-align: center;
 }

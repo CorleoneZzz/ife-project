@@ -14,6 +14,7 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
+    overflow-y:hidden;
 }/*这里是关键，父级有百分比*/
 .flex-box
 {
@@ -133,6 +134,7 @@ html, body {
     /*min-width: 1230px;*/
     width: calc(100% - 350px);
     background-color: #ffffff;
+    position: relative;
 }
 .message-header
 {
@@ -350,4 +352,19 @@ html, body {
     line-height: 36px;
     font-size: 14px;
     color: #ffffff;
+}
+.content-right
+{
+    position: absolute;
+    top: 81px;
+    left: 400px;
+    padding-left: 97px;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+.content-right .right-box
+{
+    height: auto;
+    max-height:856px ;
+    overflow-y: scroll;
 }

@@ -31,6 +31,18 @@ html, body {
 {
     margin-top:20px ;
 }
+.img-box img:hover
+{
+    -webkit-transform: scale(1.1) rotate(360deg);
+    -moz-transform: scale(1.1) rotate(360deg);
+    -ms-transform: scale(1.1) rotate(360deg);
+    -o-transform: scale(1.1) rotate(360deg);
+    transform: scale(1.1) rotate(360deg);
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}/*图标旋转动画*/
 .setting-box
 {
     margin-left: 10px;
@@ -57,6 +69,7 @@ html, body {
     /*min-height:1000px;*/
     background:#222c3c;
     padding-left:30px;
+    position: relative;
 }
 .menu-box a
 {
@@ -73,6 +86,15 @@ html, body {
     min-height: 230px;
     position: relative;
     border-bottom:3px solid  #2a3547 ;
+    background:url("image/bluebg.png") right 84px no-repeat;
+}
+.menu1 span
+{
+   position: absolute;
+    top:91px;
+    right:10px;
+    color:white;
+    font-size: 14px;
 }
 .menu2
 {
@@ -126,6 +148,37 @@ html, body {
 {
     font-size: 14px;
     line-height: 20px;
+}
+.menu-box .goal
+{
+    position: absolute;
+    bottom: 23px;
+    left: 30px;
+}
+.menu-box .goal span
+{
+    font-family: ProximaNova-Semibold;
+    font-size: 14px;
+    font-weight: normal;
+    color: #ffffff;
+    margin-right: 22px;
+}
+.menu-box .goal .progress-bar
+{
+    width: 190px;
+    height: 4px;
+    border-radius: 2px;
+    border: 1px solid rgba(255,255,255,0.3);
+    margin-top: 17px;
+}
+.menu-box .goal .progress
+{
+    width: 40px;
+    height: 4px;
+    background-color:#7f5be6;
+    border-radius: 2px;
+    z-index: 10;
+    margin-top: -5px;
 }
 .messages
 {
@@ -240,6 +293,7 @@ html, body {
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     /*border-right: 1px solid rgba(0, 0, 0, 0.2);*/
     background: url("image/bluebg2.png") 355px 78px no-repeat;
+    border-left: 3px solid #2399f1;
 
 }
 .message1 .face
@@ -302,7 +356,23 @@ html, body {
     position: relative;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     /*border-right:1px solid rgba(0, 0, 0, 0.2);*/
-
+    border-left: 3px solid transparent;/*颜色透明*/
+}
+.inner-box .message2:hover
+{
+    border-left: 3px solid  #2399f1 ;
+}
+.inner-box .message2:hover .name
+{
+    background: url("image/StatusB.png") no-repeat left top;
+}
+.inner-box .message2:hover .name p
+{
+    font-size: 16px;
+    margin-left: 12px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    color: #2399f1;
 }
 .message2 .face
 {

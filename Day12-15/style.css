@@ -361,6 +361,46 @@ html, body {
     border-left: 1px solid rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
+.content-right .right-header
+{
+    height: 76px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2) ;
+    position: relative;
+    background: url("image/StatusG.png") 139px 31px no-repeat;
+}
+.content-right .right-header .header-name
+{
+    position: absolute;
+    top: 24px;
+    left: 28px;
+    font-family: ProximaNova-Semibold;
+    font-size: 18px;
+    font-weight: normal;
+    color: #585d68;
+}
+.content-right .right-header .header-icon
+{
+    position: absolute;
+    top: 22px;
+    right: 195px;
+}
+.content-right .right-header .header-page
+{
+    position: absolute;
+    top: 22px;
+    right: 20px;
+}
+.content-right .right-header .header-page span
+{
+    width: 42px;
+    position: absolute;
+    top: 12px;
+    right: 108px;
+    font-family: ProximaNova-Semibold;
+    font-size: 14px;
+    font-weight: normal;
+    color: #56688a;
+}
 .content-right .right-box
 {
     height: auto;

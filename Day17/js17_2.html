@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="GB2312">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>    
+    <!--<h3>3的小游戏</h3>-->
+    <!--<p id="result">游戏结果</p>-->
+    <!--<script>-->
+    <!--for (var i=0;i<=100;i++)-->
+	<!--{-->
+		<!--if(i%3===0&&i!=0)-->
+		<!--{-->
+		<!--document.write("PA"+ ',');-->
+		<!--}-->
+		<!--else-->
+		<!--{-->
+		<!--document.write(i+ ',');-->
+		<!--}-->
+	<!--}-->
+    <!--</script>-->
+    <h3>九九乘法表</h3>
+    <script>
+        for (var i=1;i<10;i++) {
+            for (var j=1;j<10;j++)
+            {
+                if (j<=i) {
+                    var result=i*j;
+                    document.write(j+"*"+i+"="+result+"&nbsp&nbsp");
+                }
+            }
+            document.write("<br/>");
+        }
+    </script>
+</body>
+</html>

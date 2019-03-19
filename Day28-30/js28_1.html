@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>email</title>
+</head>
+<body>
+<div class="wrapper">
+    <input id="email-input" type="text">
+    <ul id="email-sug-wrapper" class="email-sug"></ul>
+</div>
+<script>
+    var postfixList = ['163.com', 'gmail.com', '126.com', 'qq.com', '263.net'];
+    //获取用户输入
+    var input = document.getElementById("email-input");
+    input.oninput = function getInput() {
+        var inputText = input.value;
+        console.log(inputText);
+        return inputText;
+    };
+
+    //将用户输入与邮箱后缀结合
+    function listContent() {
+        var inputText = input.value;
+        for (let i = 0; i < postfixList.length; i++) {
+            var showContent =  postfixList[i];
+            console.log(showContent);
+        }
+        return showContent;
+    }
+
+    //显示到email-sug-wrapper区域
+    function listContentShow() {
+        var showContent = listContent();
+        // document.getElementById("email-sug-wrapper")
+    }
+
+    //用户不输入提示框不显示
+    function showController() {
+        if (input.value !== "") {
+            showStyle();
+        } else {
+            showStyle();
+        }
+    }
+
+    function showStyle() {
+        listContentShow();
+    }
+
+    function hideStyle() {
+
+    }
+
+    window.onload = showController;
+</script>
+</body>
+</html>

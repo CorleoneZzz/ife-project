@@ -1,0 +1,35 @@
+<!--通过除2取余的方法来把十进制整数转化为二进制.-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>IFE ECMAScript</title>
+</head>
+<body>
+<input id="dec-number" type="number" placeholder="输入一个十进制非负整数">
+<button id="trans-btn">转化为二进制</button>
+<p id="result">运算结果</p>
+<script>
+    // 在这里实现你的转化方法，注意需要判断输入必须为一个非负整数
+    function dec2bin(decNumber) {
+        var result=[];
+        if(decNumber>=0)
+        {
+            var upCount=Math.floor(decNumber/2);
+            for(let i=1;i<upCount;i++)
+            {
+                result.push(decNumber%2);
+                decNumber=Math.floor(decNumber/2);
+            }
+            return result.reverse().join("");
+        }
+    }
+    // 实现当点击转化按钮时，将输入的十进制数字转化为二进制，并显示在result的p标签内
+  document.getElementById("trans-btn").onclick=function () {
+      document.getElementById("result").innerHTML=
+      "运算结果是:"+dec2bin(document.getElementById("dec-number").value);
+  }
+
+</script>
+</body>
+</html>

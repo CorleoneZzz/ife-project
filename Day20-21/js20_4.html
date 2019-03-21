@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>button</title>
+</head>
+<body>
+<div id="fade-obj" style="width:300px;height:300px;background:#000"></div>
+<button id="fade-btn">淡出</button>
+<script>
+    var imgContent = document.getElementById("fade-obj");
+    var buttonContent = document.getElementById("fade-btn");
+    var num = 10;
+    buttonContent.addEventListener("click", function () {
+        function minusOpa() {
+            num--;
+            imgContent.style.opacity = 0.1 * num;
+            console.log(imgContent.style.opacity);
+            buttonContent.disabled = true;
+            if (num === 0) {
+                clearInterval(minus);
+                buttonContent.disabled = false;
+            }
+        }
+        // function plusOpa() {
+        //     num++;
+        //     imgContent.style.opacity = 0.1 * num;
+        //     console.log(imgContent.style.opacity);
+        //     buttonContent.disabled = true;
+        //     if (num === 1) {
+        //         clearInterval(plus);
+        //         buttonContent.disabled = false;
+        //     }
+        // }
+        var minus = setInterval(function () {
+            minusOpa();
+        }, 300);
+        // var plus = setInterval(function () {
+        //     plusOpa();
+        // }, 300);
+    })
+</script>
+</body>
+</html>

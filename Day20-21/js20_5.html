@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>button</title>
+</head>
+<body>
+<div id="fade-obj" style="width:300px;height:300px;background:#000"></div>
+<button id="fade-btn">淡出</button>
+<script>
+    var imgContent = document.getElementById("fade-obj");
+    var buttonContent = document.getElementById("fade-btn");
+    var num = 10;
+
+    function minusOpa() {
+        num--;
+        imgContent.style.opacity = 0.1 * num;
+        console.log(imgContent.style.opacity);
+        buttonContent.disabled = true;
+    }
+
+    function plusOpa() {
+        num++;
+        imgContent.style.opacity = 0.1 * num;
+        console.log(imgContent.style.opacity);
+        buttonContent.disabled = true;
+    }
+
+    function minusClick() {
+        console.log("减少了")
+        minus = setInterval(function () {
+            minusOpa();
+            if (num === 0) {
+                clearInterval(minus);
+                buttonContent.disabled = false;
+                buttonContent.innerHTML = "淡入";
+                buttonContent.removeEventListener("click", minusClick, false);
+                buttonContent.addEventListener("click", plusClick, false);
+            }
+        }, 300);
+    }
+
+    function plusClick() {
+        console.log("增加了")
+        plus = setInterval(function () {
+            plusOpa();
+            if (num === 10) {
+                clearInterval(plus);
+                buttonContent.disabled = false;
+                buttonContent.innerHTML = "淡出";
+                buttonContent.removeEventListener("click", plusClick, false);
+            }
+        }, 300);
+    }
+
+    if (num === 10) {
+        buttonContent.addEventListener("click", minusClick, false);
+    }
+</script>
+</body>
+</html>

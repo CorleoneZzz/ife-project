@@ -23,6 +23,7 @@
                 // clearInterval后面是id（1,2...的编号）
                 // console.log("minus"+minus)
                 buttonContent.disabled = false;
+                buttonContent.innerHTML = "淡入";
                 plus = setInterval(function () {
                     plusOpa();
                     // console.log("plus"+plus)
@@ -38,6 +39,7 @@
             if (num === 10) {
                 clearInterval(plus);
                 buttonContent.disabled = false;
+                buttonContent.innerHTML = "淡出";
             }
         }
 

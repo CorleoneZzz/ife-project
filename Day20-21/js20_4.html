@@ -12,6 +12,7 @@
     var buttonContent = document.getElementById("fade-btn");
     var num = 10;
     buttonContent.addEventListener("click", function () {
+
         function minusOpa() {
             num--;
             imgContent.style.opacity = 0.1 * num;
@@ -19,25 +20,31 @@
             buttonContent.disabled = true;
             if (num === 0) {
                 clearInterval(minus);
+                // clearInterval后面是id（1,2...的编号）
+                // console.log("minus"+minus)
+                buttonContent.disabled = false;
+                plus = setInterval(function () {
+                    plusOpa();
+                    // console.log("plus"+plus)
+                }, 300);
+            }
+        }
+
+        function plusOpa() {
+            num++;
+            imgContent.style.opacity = 0.1 * num;
+            console.log(imgContent.style.opacity);
+            buttonContent.disabled = true;
+            if (num === 10) {
+                clearInterval(plus);
                 buttonContent.disabled = false;
             }
         }
-        // function plusOpa() {
-        //     num++;
-        //     imgContent.style.opacity = 0.1 * num;
-        //     console.log(imgContent.style.opacity);
-        //     buttonContent.disabled = true;
-        //     if (num === 1) {
-        //         clearInterval(plus);
-        //         buttonContent.disabled = false;
-        //     }
-        // }
+
         var minus = setInterval(function () {
             minusOpa();
         }, 300);
-        // var plus = setInterval(function () {
-        //     plusOpa();
-        // }, 300);
+
     })
 </script>
 </body>

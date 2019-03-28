@@ -21,15 +21,31 @@
 </div>
 <p id="result"></p>
 <script>
+    <!--这时候肯定都是false-->
+    // var clickA = document.getElementById("radio-a").checked;
+    // var clickB = document.getElementById("radio-b").checked;
+    var clickA = document.getElementById("radio-a");
+    var clickB = document.getElementById("radio-b");
     var numA = document.getElementById("num-a");
     var numB = document.getElementById("num-b");
-    var buttonContent=document.getElementsByTagName("button");
+    var buttonContent = document.getElementsByTagName("button");
+    var button0 = buttonContent[0];
     var button6 = buttonContent[6];
     var button7 = buttonContent[7];
     var result = document.getElementById("result");
-    // button0.addEventListener("click", function () {
-    //
-    // });
+    button0.addEventListener("click", function () {
+        let currentValue = checkValue();
+        if (currentValue) {
+            let valueResult = isNaN(currentValue);
+            if (valueResult) {
+                result.innerHTML = "当前选中框内输入不是数字";
+            } else {
+                result.innerHTML = "当前选中框内输入是数字";
+            }
+        } else {
+            result.innerHTML = "请选中你需要判断的状态框";
+        }
+    });
     // button1.addEventListener("click", function () {
     //
     // });
@@ -46,7 +62,6 @@
     //
     // });
     button6.addEventListener("click", function () {
-        console.log(numA.value,numB.value)
         if (numA.value > numB.value) {
             result.innerHTML = numA.value;
         } else if (numA.value < numB.value) {
@@ -57,7 +72,7 @@
 
     });
     button7.addEventListener("click", function () {
-        console.log(numA.value,numB.value)
+        console.log(numA.value, numB.value)
         if (numA.value < numB.value) {
             result.innerHTML = numA.value;
         } else if (numA.value > numB.value) {
@@ -66,6 +81,17 @@
             result.innerHTML = "两数相等";
         }
     });
+
+    function checkValue() {
+        if (clickA.checked) {
+            return numA.value;
+        } else if (clickB.checked) {
+            return numB.value;
+        } else {
+            return false
+        }
+
+    }
 </script>
 </body>
 </html>

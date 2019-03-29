@@ -30,6 +30,11 @@
     var numB = document.getElementById("num-b");
     var buttonContent = document.getElementsByTagName("button");
     var button0 = buttonContent[0];
+    var button1 = buttonContent[1];
+    var button2 = buttonContent[2];
+    var button3 = buttonContent[3];
+    var button4 = buttonContent[4];
+    var button5 = buttonContent[5];
     var button6 = buttonContent[6];
     var button7 = buttonContent[7];
     var result = document.getElementById("result");
@@ -46,21 +51,52 @@
             result.innerHTML = "请选中你需要判断的状态框";
         }
     });
-    // button1.addEventListener("click", function () {
-    //
-    // });
-    // button2.addEventListener("click", function () {
-    //
-    // });
-    // button3.addEventListener("click", function () {
-    //
-    // });
-    // button4.addEventListener("click", function () {
-    //
-    // });
-    // button5.addEventListener("click", function () {
-    //
-    // });
+    button1.addEventListener("click", function () {
+        var a = parseFloat(numA.value);
+        var b = parseInt(numB.value);
+        if (numA.value !== '' && numB.value !== '') {
+            let valueResult = a.toFixed(b);
+            result.innerHTML = "A四舍五入B位数的值是" + valueResult;
+        } else {
+            result.innerHTML = "请在A和B输入框都输入文字";
+        }
+    });
+    button2.addEventListener("click", function () {
+        let currentValue = checkValue();
+        if (currentValue) {
+            let valueResult = Math.abs(currentValue);
+            result.innerHTML = "选中状态框的绝对值为" + valueResult;
+        } else {
+            result.innerHTML = "请选中你需要判断的状态框";
+        }
+    });
+    button3.addEventListener("click", function () {
+        let currentValue = checkValue();
+        if (currentValue) {
+            let valueResult = Math.ceil(currentValue);
+            result.innerHTML = "选中状态框的上舍入值为" + valueResult;
+        } else {
+            result.innerHTML = "请选中你需要判断的状态框";
+        }
+    });
+    button4.addEventListener("click", function () {
+        let currentValue = checkValue();
+        if (currentValue) {
+            let valueResult = Math.floor(currentValue);
+            result.innerHTML = "选中状态框的下舍入值为" + valueResult;
+        } else {
+            result.innerHTML = "请选中你需要判断的状态框";
+        }
+    });
+    button5.addEventListener("click", function () {
+        let currentValue = checkValue();
+        if (currentValue) {
+            let valueResult = Math.round(currentValue);
+            result.innerHTML = "选中状态框的值四舍五入最接近的整数为" + valueResult;
+        } else {
+            result.innerHTML = "请选中你需要判断的状态框";
+        }
+    });
     button6.addEventListener("click", function () {
         if (numA.value > numB.value) {
             result.innerHTML = numA.value;
@@ -72,14 +108,16 @@
 
     });
     button7.addEventListener("click", function () {
-        console.log(numA.value, numB.value)
-        if (numA.value < numB.value) {
-            result.innerHTML = numA.value;
-        } else if (numA.value > numB.value) {
-            result.innerHTML = numB.value;
-        } else {
-            result.innerHTML = "两数相等";
-        }
+        // console.log(numA.value, numB.value)
+        // if (numA.value < numB.value) {
+        //     result.innerHTML = numA.value;
+        // } else if (numA.value > numB.value) {
+        //     result.innerHTML = numB.value;
+        // } else {
+        //     result.innerHTML = "两数相等";
+        // }
+        let value = Math.min(numA.value, numB.value)
+        result.innerHTML = value;
     });
 
     function checkValue() {

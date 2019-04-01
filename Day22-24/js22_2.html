@@ -35,9 +35,12 @@
 <script>
     var clickA = document.getElementById("radio-a");
     var clickB = document.getElementById("radio-b");
+    var strA = document.getElementById("str-a");
+    var strB = document.getElementById("str-b");
     var numA = document.getElementById("num-a");
     var numB = document.getElementById("num-b");
     var buttonContent = document.getElementsByTagName("button");
+    var pContent = document.getElementById("result");
     var button0 = buttonContent[0];
     var button1 = buttonContent[1];
     var button2 = buttonContent[2];
@@ -50,6 +53,92 @@
     var button9 = buttonContent[9];
     var button10 = buttonContent[10];
     var button11 = buttonContent[11];
+    button0.addEventListener("click", function () {
+        var content = currentChosen();
+        console.log(content);
+        if (content) {
+            pContent.innerHTML = "当前选中输入的内容长度为" + content.length;
+        } else {
+            pContent.innerHTML = "请在输入框中输入值之后再进行判断";
+        }
+    })
+
+    button1.addEventListener("click", function () {
+        var content = currentChosen();
+        console.log(content);
+        if (content) {
+            pContent.innerHTML = "当前选中输入中的第3个字符为" + content[2];
+        } else {
+            pContent.innerHTML = "请在输入框中输入值之后再进行判断";
+        }
+    })
+
+    button2.addEventListener("click", function () {
+        pContent.innerHTML = "把两个输入框的文字连接在一起输出为" + strA.value.concat(strB.value);
+    })
+
+    button3.addEventListener("click", function () {
+        var indexValue = strA.value.indexOf(strB.value);
+        if (indexValue !== -1) {
+            pContent.innerHTML = "输入B中的内容，在输入A的内容中第一次出现的位置index" + indexValue;
+        } else {
+            pContent.innerHTML = "输入B中的内容，在输入A的内容中没有出现过";
+        }
+    })
+
+    button4.addEventListener("click", function () {
+        var indexValue = strB.value.lastIndexOf(strA.value);
+        if (indexValue !== -1) {
+            pContent.innerHTML = "输入A中的内容，在输入B的内容中最后一次出现的位置index" + indexValue;
+        } else {
+            pContent.innerHTML = "输入A中的内容，在输入B的内容中没有出现过";
+        }
+    })
+
+    button5.addEventListener("click", function () {
+        var content = currentChosen();
+        console.log(content);
+        if (content) {
+            pContent.innerHTML = "使用slice获取选中输入框内容的部分内容为" + content.slice(numA.value, numB.value);
+        } else {
+            pContent.innerHTML = "请在输入框中输入值之后再进行判断";
+        }
+    })
+
+    button8.addEventListener("click", function () {
+        var content = currentChosen();
+        console.log(content);
+        if (content) {
+            pContent.innerHTML = "把所选输入框中的内容全部转为大写" + content.toUpperCase();
+        } else {
+            pContent.innerHTML = "请在输入框中输入值之后再进行判断";
+        }
+    })
+
+    button9.addEventListener("click", function () {
+        var content = currentChosen();
+        console.log(content);
+        if (content) {
+            pContent.innerHTML = "把所选输入框中的内容全部转为小写" + content.toLowerCase();
+        } else {
+            pContent.innerHTML = "请在输入框中输入值之后再进行判断";
+        }
+    })
+
+    button11.addEventListener("click", function () {
+        //需要俩参数，被替换的和要替换的
+        pContent.innerHTML = "把所选输入框中a内容的全部替换成另外一个输入框中的内容" + strA.value.replace(strA.value, strB.value);
+    })
+
+    function currentChosen() {
+        if (clickA.checked) {
+            return strA.value;
+        } else if (clickB.checked) {
+            return strB.value;
+        } else {
+            return false;
+        }
+    }
 </script>
 </body>
 </html>

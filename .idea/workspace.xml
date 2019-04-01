@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d8efa47-2875-4ad7-93e1-59fb406ef9a9" name="Default Changelist" comment="button maunal">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Day22-24/js22_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Day22-24/js22_2.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,7 +20,7 @@
         <entry file="file://$PROJECT_DIR$/Day22-24/js22_1.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="399">
-              <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+              <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -27,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Day22-24/js22_2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="886">
-              <caret line="128" column="25" selection-start-line="128" selection-start-column="25" selection-end-line="128" selection-end-column="25" />
+            <state relative-caret-position="949">
+              <caret line="114" column="57" selection-start-line="114" selection-start-column="44" selection-end-line="114" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -74,7 +75,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-342" />
     <option name="y" value="-21" />
     <option name="width" value="2576" />
@@ -155,12 +156,14 @@
       <workItem from="1553823348974" duration="608000" />
       <workItem from="1553910078386" duration="651000" />
       <workItem from="1553952809931" duration="2167000" />
-      <workItem from="1554083734738" duration="4529000" />
+      <workItem from="1554083734738" duration="7326000" />
+      <workItem from="1554109613600" duration="1835000" />
+      <workItem from="1554111864046" duration="198000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85204000" />
+    <option name="totallyTimeSpent" value="90034000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -282,14 +285,14 @@
     <entry file="file://$PROJECT_DIR$/Day22-24/js22_1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
-          <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Day22-24/js22_2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="886">
-          <caret line="128" column="25" selection-start-line="128" selection-start-column="25" selection-end-line="128" selection-end-column="25" />
+        <state relative-caret-position="949">
+          <caret line="114" column="57" selection-start-line="114" selection-start-column="44" selection-end-line="114" selection-end-column="57" />
         </state>
       </provider>
     </entry>

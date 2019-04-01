@@ -105,6 +105,26 @@
         }
     })
 
+    button6.addEventListener("click", function () {
+        var checkTextarea;
+        if (clickA.checked) {
+            checkTextarea = strA;
+        } else if (clickB.checked) {
+            checkTextarea = strB;
+        }
+        pContent.innerHTML = "当前选中输入框的行数" + checkTextarea.rows;
+    })
+
+    button7.addEventListener("click", function () {
+        var content = currentChosen();
+        console.log(content);
+        if (content) {
+            pContent.innerHTML = "使用substr获取选中输入框内容的子字符串numa到numb" + content.substr(numA.value, numB.value - numA.value);
+        } else {
+            pContent.innerHTML = "请在输入框中输入值之后再进行判断";
+        }
+    })
+
     button8.addEventListener("click", function () {
         var content = currentChosen();
         console.log(content);
@@ -120,6 +140,16 @@
         console.log(content);
         if (content) {
             pContent.innerHTML = "把所选输入框中的内容全部转为小写" + content.toLowerCase();
+        } else {
+            pContent.innerHTML = "请在输入框中输入值之后再进行判断";
+        }
+    })
+
+    button10.addEventListener("click", function () {
+        var content = currentChosen();
+        console.log(content);
+        if (content) {
+            pContent.innerHTML = "把所选输入框中内容的半角空格全部去除" + content.replace(/\ +/g, "");
         } else {
             pContent.innerHTML = "请在输入框中输入值之后再进行判断";
         }

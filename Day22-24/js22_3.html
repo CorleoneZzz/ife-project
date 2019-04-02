@@ -11,10 +11,22 @@
 注意需要去除的空格，包括全角、半角空格
 暂时不需要学习和使用正则表达式的方式
 */
+    //正则表达式
+    // function diyTrim(str) {
+    //     // var strContent = ToCDB(str);
+    //     var result = str.replace(/\ |\　+/g, "");
+    //     return result
+    // }
+
+    //非正则表达式
     function diyTrim(str) {
-        var strContent = ToCDB(str);
-        var result = strContent.replace(/\ +/g, "");
-        return result
+        var result = "";
+        for (let i = 0; i < str.length; i++) {
+            if (str[i].charCodeAt() !== 32 && str[i].charCodeAt() !== 12288) {
+                result = result.concat(str[i]);
+            }
+        }
+        return result;
     }
 
     // 测试用例
@@ -52,22 +64,22 @@
     console.log(removeRepetition("")); // ->
     console.log(removeRepetition("abc")); // ->abc
 
-    //全角转换为半角
-    function ToCDB(str) {
-        var tmp = "";
-        for (var i = 0; i < str.length; i++) {
-            if (str.charCodeAt(i) == 12288) {
-                tmp += String.fromCharCode(str.charCodeAt(i) - 12256);
-                continue;
-            }
-            if (str.charCodeAt(i) > 65280 && str.charCodeAt(i) < 65375) {
-                tmp += String.fromCharCode(str.charCodeAt(i) - 65248);
-            } else {
-                tmp += String.fromCharCode(str.charCodeAt(i));
-            }
-        }
-        return tmp
-    }
+    // //全角转换为半角
+    // function ToCDB(str) {
+    //     var tmp = "";
+    //     for (var i = 0; i < str.length; i++) {
+    //         if (str.charCodeAt(i) == 12288) {
+    //             tmp += String.fromCharCode(str.charCodeAt(i) - 12256);
+    //             continue;
+    //         }
+    //         if (str.charCodeAt(i) > 65280 && str.charCodeAt(i) < 65375) {
+    //             tmp += String.fromCharCode(str.charCodeAt(i) - 65248);
+    //         } else {
+    //             tmp += String.fromCharCode(str.charCodeAt(i));
+    //         }
+    //     }
+    //     return tmp
+    // }
 
 
 </script>

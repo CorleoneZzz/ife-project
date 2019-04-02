@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+</head>
+<body>
+<input id="queue-input" type="text">
+<p id="queue-cont">队列内容：apple-&gt;pear</p>
+<button id="in-btn">入队</button>
+<button id="out-btn">出队</button>
+<button id="font-btn">打印队头元素内容</button>
+<button id="empty-btn">判断队列是否为空</button>
+<script>
+    var queue = ["apple", "pear"];
+    var queueContent = document.getElementById("queue-input");
+    var pContent = document.getElementById("queue-cont");
+    var buttonContent = document.getElementsByTagName("button");
+    var button0 = buttonContent[0];
+    var button1 = buttonContent[1];
+    var button2 = buttonContent[2];
+    var button3 = buttonContent[3];
+    button0.addEventListener("click", function () {
+        if (queueContent.value !== "") {
+            queue.push(queueContent.value);
+        } else {
+            pContent.innerHTML = "请输入入队元素"
+        }
+        console.log(queue)
+    })
+    button1.addEventListener("click", function () {
+        if (queue.length !== 0) {
+            queue.pop();
+        } else {
+            pContent.innerHTML = "队列为空,不能出队操作"
+        }
+        console.log(queue)
+    })
+    button2.addEventListener("click", function () {
+        // shift() 删除并返回数组的第一个元素
+        // if (queue.shift() !== undefined) {
+        //     pContent.innerHTML = "队列头元素为" + queue.shift();
+        // } else {
+        //     pContent.innerHTML = "队列为空,没有头元素"
+        // }
+        // console.log(queue)
+        if (queue.length !== 0) {
+            pContent.innerHTML = "队列头元素为" + queue[0];
+        } else {
+            pContent.innerHTML = "队列为空,没有头元素"
+        }
+    })
+    button3.addEventListener("click", function () {
+        if (queue.length === 0) {
+            console.log("队列为空")
+            pContent.innerHTML = "队列为空"
+        } else {
+            pContent.innerHTML = "队列不为空"
+        }
+        console.log(queue)
+    })
+</script>
+</body>
+</html>

@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d8efa47-2875-4ad7-93e1-59fb406ef9a9" name="Default Changelist" comment="button maunal">
-      <change afterPath="$PROJECT_DIR$/Day22-24/js22_4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day22-24/js22_5.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day22-24/js22_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Day22-24/js22_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day22-24/js22_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Day22-24/js22_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day22-24/js22_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/Day22-24/js22_3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day22-24/js22_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/Day22-24/js22_5.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Day22-24/js22_5.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1064">
-              <caret line="57" column="37" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
+            <state relative-caret-position="476">
+              <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
               <folding>
                 <element signature="e#174#178#0" expanded="true" />
               </folding>
@@ -111,9 +107,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-342" />
-    <option name="y" value="-21" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="2576" />
     <option name="height" value="1416" />
   </component>
@@ -147,7 +143,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/develop/ccsg/ccsg-pc-web" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -195,12 +191,12 @@
       <workItem from="1554083734738" duration="7326000" />
       <workItem from="1554109613600" duration="1835000" />
       <workItem from="1554111864046" duration="198000" />
-      <workItem from="1554166907000" duration="13725000" />
+      <workItem from="1554166907000" duration="15632000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103759000" />
+    <option name="totallyTimeSpent" value="105666000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -342,8 +338,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Day22-24/js22_5.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1064">
-          <caret line="57" column="37" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
+        <state relative-caret-position="476">
+          <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
           <folding>
             <element signature="e#174#178#0" expanded="true" />
           </folding>

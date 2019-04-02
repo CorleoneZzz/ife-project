@@ -23,18 +23,21 @@
     button0.addEventListener("click", function () {
         if (queueContent.value !== "") {
             queue.push(queueContent.value);
+            // pContent.innerHTML = queue.join("-&gt;");
+            //队头在最左侧,队头对应数组中最后一个元素
+            pContent.innerHTML = queue.reverse().join("&lt-");
         } else {
             pContent.innerHTML = "请输入入队元素"
         }
-        console.log(queue)
     })
     button1.addEventListener("click", function () {
         if (queue.length !== 0) {
             queue.pop();
+            //队头在最右侧,队头对应数组中最后一个元素
+            pContent.innerHTML = queue.join("-&gt;");
         } else {
             pContent.innerHTML = "队列为空,不能出队操作"
         }
-        console.log(queue)
     })
     button2.addEventListener("click", function () {
         // shift() 删除并返回数组的第一个元素
@@ -43,9 +46,9 @@
         // } else {
         //     pContent.innerHTML = "队列为空,没有头元素"
         // }
-        // console.log(queue)
         if (queue.length !== 0) {
-            pContent.innerHTML = "队列头元素为" + queue[0];
+            // pContent.innerHTML = "队列头元素为" + queue[0];
+            pContent.innerHTML = "队列头元素为" + queue[queue.length - 1];
         } else {
             pContent.innerHTML = "队列为空,没有头元素"
         }
@@ -57,7 +60,6 @@
         } else {
             pContent.innerHTML = "队列不为空"
         }
-        console.log(queue)
     })
 </script>
 </body>

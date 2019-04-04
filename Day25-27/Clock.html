@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clock</title>
+</head>
+<body>
+<p id="txt"></p>
+<script>
+    // 格式分和秒的函数,注意每种情况都要有返回值,不然就会undefined
+    function checkTime(t) {
+        if (t < 10) {
+            return "0" + t;
+        }
+        return t;
+    }
+    function clock() {
+        var date = new Date();
+        var h = date.getHours();
+        var m = date.getMinutes();
+        var s = date.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById("txt").innerHTML = h + ":" + m + ":" + s;
+    }
+    setInterval("clock()", 1000)
+</script>
+</body>
+</html>

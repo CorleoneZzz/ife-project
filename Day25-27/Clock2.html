@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clock1</title>
+</head>
+<body>
+<p id="time"></p>
+<script>
+    var ap = false;
+
+    function AP() {
+        if (ap === false) {
+            return 'AM';
+        } else {
+            return 'PM';
+        }
+    }
+
+    function showTime() {
+        var apShow = AP();
+        var date = new Date();
+        var year = date.getFullYear();
+        var month = date.getMonth();
+        var day = date.getDate();
+        var hour = date.getHours();
+        var minute = date.getMinutes();
+        var second = date.getSeconds();
+        var hours = dateHour(hour);
+        var mins = dateFormat(minute);
+        var secs = dateFormat(second);
+        var weekend = weekTime();
+        document.getElementById("time").innerHTML = year + "-" + month + "-" + day + weekend + hours + ":" + mins + ":" + secs + apShow;
+    }
+
+    function weekTime() {
+        var weekend = new Array(7);
+        var date = new Date();
+        weekend[0] = "Sunday";
+        weekend[1] = "Monday";
+        weekend[2] = "Tuesday";
+        weekend[3] = "Wednesday";
+        weekend[4] = "Thursday";
+        weekend[5] = "Friday";
+        weekend[6] = "Saturday";
+        var i = date.getDay();
+        return weekend[i];
+    }
+
+    function dateFormat(t) {
+        if (t < 10) {
+            return "0" + t;
+        }
+        return t;
+    }
+
+    function dateHour(t) {
+        if (t < 12) {
+            return t;
+        } else {
+            ap = true;
+            return t - 12;
+        }
+    }
+
+    setInterval("showTime()", 1000);
+</script>
+</body>
+</html>

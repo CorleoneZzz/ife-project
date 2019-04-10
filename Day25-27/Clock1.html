@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clock1</title>
+</head>
+<body>
+<p id="time"></p>
+<script>
+    function showTime() {
+        var date = new Date();
+        var year = date.getFullYear();
+        var month = date.getMonth();
+        var day = date.getDate();
+        var hour = date.getHours();
+        var minute = date.getMinutes();
+        var second = date.getSeconds();
+        var mins = dateFormat(minute);
+        var secs = dateFormat(second);
+        var weekend = weekTime();
+        document.getElementById("time").innerHTML = year + "年" + month + "月" + day + "日" + weekend + hour + ":" + mins + ":" + secs;
+    }
+
+    function weekTime() {
+        var weekend = new Array(7);
+        var date = new Date();
+        weekend[0] = "星期日";
+        weekend[1] = "星期一";
+        weekend[2] = "星期二";
+        weekend[3] = "星期三";
+        weekend[4] = "星期四";
+        weekend[5] = "星期五";
+        weekend[6] = "星期六";
+        var i = date.getDay();
+        return weekend[i];
+    }
+
+    function dateFormat(t) {
+        if (t < 10) {
+            return "0" + t;
+        }
+        return t;
+    }
+
+    setInterval("showTime()", 1000);
+</script>
+</body>
+</html>

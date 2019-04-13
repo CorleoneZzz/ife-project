@@ -5,52 +5,42 @@
     <title>Select</title>
 </head>
 <body>
-<select id="year-select">
-    <option value="2000">2000</option>
-    <option value="2001">2001</option>
-    <option value="2002">2002</option>
-    ……
-    <option value="2032">2002</option>
-</select>
+<select id="year-select" onchange="checkValue()"></select>
 
-<select id="month-select">
-    <option value="1">1</option>
-    <option value="2">2</option>
-    ……
-    <option value="12">12</option>
-</select>
-
-<select id="day-select">
-    <option value="1">1</option>
-    <option value="2">2</option>
-    ……
-    <option value="31">31</option>
-</select>
-
-<select id="hour-select">
-    <option value="0">00</option>
-    <option value="1">01</option>
-    ……
-    <option value="23">23</option>
-</select>
-
-<select id="minite-select">
-    <option value="0">0</option>
-    <option value="1">1</option>
-    ……
-    <option>59</option>
-</select>
-
-<select id="second-select">
-    <option value="0">0</option>
-    <option value="1">1</option>
-    ……
-    <option>59</option>
-</select>
-
-<p id="result-wrapper">现在距离 2001年1月1日星期X HH:MM:SS 还有 X 天 X 小时 X 分 X 秒</p>
+<p id="result-wrapper"></p>
 <script>
+    function checkValue() {
+        var index = document.getElementById("year-select").selectedIndex;
+        var value = document.getElementById("year-select").options[index].value;
+        console.log(value)
+        return value
+    }
 
+    selectYear();
+
+    function selectYear() {
+        for (let i = 2018; i <= 2020; i++) {
+            var node = document.createElement("option");
+            var nodes = document.createTextNode(i);
+            node.appendChild(nodes);
+            document.getElementById("year-select").appendChild(node);
+        }
+    }
+
+    function NowYear() {
+        var date = new Date();
+        var year = date.getFullYear();
+        var value = checkValue();
+        if (value > year) {
+            console.log("所选日期还没到,还差" + (value - year) + "年");
+        }
+        else if (value < year) {
+            console.log("所选日期过去了,已经过去了" + (year - value) + "年")
+        }
+        document.getElementById("result-wrapper").innerHTML = year + "年";
+    }
+
+    setInterval("NowYear()", 1000);
 </script>
 </body>
 </html>

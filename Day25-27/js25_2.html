@@ -5,21 +5,37 @@
     <title>Select</title>
 </head>
 <body>
-<select id="year-select" onchange="checkValue()"></select>
-
+<select id="year-select" onchange="checkValue1()"></select>
+<select id="month-select" onchange="checkValue2()"></select>
+<select id="day-select"></select>
+<select id="hour-select"></select>
+<select id="minute-select"></select>
+<select id="second-select"></select>
 <p id="result-wrapper"></p>
 <script>
-    function checkValue() {
+    function checkValue1() {
         var index = document.getElementById("year-select").selectedIndex;
         var value = document.getElementById("year-select").options[index].value;
         console.log(value)
         return value
     }
 
+    function checkValue2() {
+        var index = document.getElementById("month-select").selectedIndex;
+        var value = document.getElementById("month-select").options[index].value;
+        console.log(value)
+        return value
+    }
+
     selectYear();
+    selectMonth();
+    selectDay();
+    selectHour();
+    selectMinute();
+    selectSecond();
 
     function selectYear() {
-        for (let i = 2018; i <= 2020; i++) {
+        for (let i = 2016; i <= 2022; i++) {
             var node = document.createElement("option");
             var nodes = document.createTextNode(i);
             node.appendChild(nodes);
@@ -27,20 +43,105 @@
         }
     }
 
-    function NowYear() {
-        var date = new Date();
-        var year = date.getFullYear();
-        var value = checkValue();
-        if (value > year) {
-            console.log("所选日期还没到,还差" + (value - year) + "年");
+    function selectMonth() {
+        for (let i = 1; i <= 12; i++) {
+            var node = document.createElement("option");
+            var nodes = document.createTextNode(i);
+            node.appendChild(nodes);
+            document.getElementById("month-select").appendChild(node);
         }
-        else if (value < year) {
-            console.log("所选日期过去了,已经过去了" + (year - value) + "年")
-        }
-        document.getElementById("result-wrapper").innerHTML = year + "年";
     }
 
-    setInterval("NowYear()", 1000);
+    function removeOption(sel) {
+        var select = document.getElementById("day-select");
+        for (var i = select.length - 1; i >= 0; i--) {
+            select.remove(select.length - 1);
+        }
+    }
+
+
+    function selectDay() {
+        removeOption();
+        let year = checkValue1();
+        let month = checkValue2();
+        if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
+            for (let i = 1; i <= 31; i++) {
+                console.log("31天的月份")
+                var node1 = document.createElement("option");
+                var nodes1 = document.createTextNode(i);
+                node1.appendChild(nodes1);
+                document.getElementById("day-select").appendChild(node1);
+            }
+        }
+        if (month == 2) {
+            if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+                for (let i = 1; i <= 29; i++) {
+                    console.log("29天的月份")
+                    var node2 = document.createElement("option");
+                    var nodes2 = document.createTextNode(i);
+                    node2.appendChild(nodes2);
+                    document.getElementById("day-select").appendChild(node2);
+                }
+            } else {
+                for (let i = 1; i <= 28; i++) {
+                    var node3 = document.createElement("option");
+                    var nodes3 = document.createTextNode(i);
+                    node3.appendChild(nodes3);
+                    document.getElementById("day-select").appendChild(node3);
+                }
+            }
+        }
+        if (month == 4 || month == 6 || month == 9 || month == 11) {
+            console.log("30天的月份")
+            for (let i = 1; i <= 30; i++) {
+                var node4 = document.createElement("option");
+                var nodes4 = document.createTextNode(i);
+                node4.appendChild(nodes4);
+                document.getElementById("day-select").appendChild(node4);
+            }
+        }
+    }
+
+    function selectHour() {
+        for (let i = 0; i <= 23; i++) {
+            var node = document.createElement("option");
+            var nodes = document.createTextNode(i);
+            node.appendChild(nodes);
+            document.getElementById("hour-select").appendChild(node);
+        }
+    }
+
+    function selectMinute() {
+        for (let i = 0; i <= 60; i++) {
+            var node = document.createElement("option");
+            var nodes = document.createTextNode(i);
+            node.appendChild(nodes);
+            document.getElementById("minute-select").appendChild(node);
+        }
+    }
+
+    function selectSecond() {
+        for (let i = 0; i <= 60; i++) {
+            var node = document.createElement("option");
+            var nodes = document.createTextNode(i);
+            node.appendChild(nodes);
+            document.getElementById("second-select").appendChild(node);
+        }
+    }
+
+    // function NowYear() {
+    //     var date = new Date();
+    //     var year = date.getFullYear();
+    //     var value = checkValue();
+    //     if (value > year) {
+    //         console.log("所选日期还没到,还差" + (value - year) + "年");
+    //     } else if (value < year) {
+    //         console.log("所选日期过去了,已经过去了" + (year - value) + "年")
+    //     }
+    //     document.getElementById("result-wrapper").innerHTML = year + "年";
+    // }
+    //
+    setInterval("selectDay()", 1000);
 </script>
 </body>
 </html>

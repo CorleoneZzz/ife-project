@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8d8efa47-2875-4ad7-93e1-59fb406ef9a9" name="Default Changelist" comment="button maunal">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day25-27/Clock2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Day25-27/Clock2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day25-27/js25_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day25-27/js25_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Day25-27/js25_2.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,7 +15,26 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Day25-27/js25_2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1030">
+              <caret line="143" column="27" selection-start-line="143" selection-start-column="27" selection-end-line="143" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Day25-27/js25_1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -33,6 +51,7 @@
       <find>queue</find>
       <find>队</find>
       <find>头</find>
+      <find>checkValue</find>
     </findStrings>
     <replaceStrings>
       <replace>stack</replace>
@@ -70,8 +89,8 @@
         <option value="$PROJECT_DIR$/Day25-27/Clock.html" />
         <option value="$PROJECT_DIR$/Day25-27/Clock1.html" />
         <option value="$PROJECT_DIR$/Day25-27/Clock2.html" />
-        <option value="$PROJECT_DIR$/Day25-27/js25_2.html" />
         <option value="$PROJECT_DIR$/Day25-27/js25_3.html" />
+        <option value="$PROJECT_DIR$/Day25-27/js25_2.html" />
       </list>
     </option>
   </component>
@@ -89,7 +108,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -106,12 +124,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -182,14 +202,18 @@
       <workItem from="1554979006633" duration="993000" />
       <workItem from="1554981969492" duration="612000" />
       <workItem from="1555157959001" duration="1365000" />
+      <workItem from="1555289364611" duration="97000" />
+      <workItem from="1555289478205" duration="447000" />
+      <workItem from="1555323535882" duration="4984000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146307000" />
+    <option name="totallyTimeSpent" value="151835000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13869189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -367,13 +391,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day25-27/js25_1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Day25-27/Clock1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -388,17 +405,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day25-27/js25_2.html">
+    <entry file="file://$PROJECT_DIR$/Day25-27/js25_3.html" />
+    <entry file="file://$PROJECT_DIR$/Day25-27/js25_1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="72" column="17" lean-forward="true" selection-end-line="145" selection-end-column="7" />
+        <state relative-caret-position="551">
+          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day25-27/js25_3.html">
+    <entry file="file://$PROJECT_DIR$/Day25-27/js25_2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="44" column="7" lean-forward="true" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+        <state relative-caret-position="1030">
+          <caret line="143" column="27" selection-start-line="143" selection-start-column="27" selection-end-line="143" selection-end-column="27" />
         </state>
       </provider>
     </entry>

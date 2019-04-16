@@ -160,7 +160,7 @@
         var indexYear = document.getElementById("year-select").selectedIndex;
         var yearSelect = document.getElementById("year-select").options[indexYear].value;
         var indexMonth = document.getElementById("month-select").selectedIndex;
-        var monthSelect = dateFormat(document.getElementById("month-select").options[indexMonth].value-1);
+        var monthSelect = dateFormat(document.getElementById("month-select").options[indexMonth].value - 1);
         var indexDay = document.getElementById("day-select").selectedIndex;
         var daySelect = dateFormat(document.getElementById("day-select").options[indexDay].value);
         var indexHour = document.getElementById("hour-select").selectedIndex;
@@ -170,15 +170,33 @@
         var indexSecond = document.getElementById("second-select").selectedIndex;
         var secondSelect = dateFormat(document.getElementById("second-select").options[indexSecond].value);
         var selectDate = new Date(yearSelect, monthSelect, daySelect, hourSelect, minuteSelect, secondSelect);
-        console.log(yearSelect, monthSelect, daySelect, hourSelect, minuteSelect, secondSelect)
+        console.log(yearSelect, monthSelect, daySelect, hourSelect, minuteSelect, secondSelect);
+
         if (date < selectDate) {
-            let printTime = (selectDate - date) / (24 * 60 * 60 * 1000);
-            console.log("所选日期还没到,还差" + printTime + "天");
+            var dateMinus = selectDate - date;
+            var printDay = Math.floor(dateMinus / (24 * 60 * 60 * 1000));
+            var i = dateMinus % (24 * 60 * 60 * 1000);
+            var printHour = Math.floor(i / (60 * 60 * 1000));
+            var j = i % (60 * 60 * 1000);
+            var printMinute = Math.floor(j / (60 * 1000));
+            var k = j % (60 * 1000);
+            var printSecond = Math.floor(k / 1000);
+            console.log("所选日期还没到,还差" + printDay + "天" + printHour + "小时" + printMinute + "分钟" + printSecond + "秒");
+            document.getElementById("result-wrapper").innerHTML = "所选日期还没到,还差" + printDay + "天" + printHour + "小时" + printMinute + "分钟" + printSecond + "秒";
+
         } else if (date > selectDate) {
-            let printTime = (date - selectDate) / (24 * 60 * 60 * 1000);
-            console.log("所选日期过去了,已经过去了" + printTime + "天")
+            var dateMinus = date - selectDate;
+            var printDay = Math.floor(dateMinus / (24 * 60 * 60 * 1000));
+            var i = dateMinus % (24 * 60 * 60 * 1000);
+            var printHour = Math.floor(i / (60 * 60 * 1000));
+            var j = i % (60 * 60 * 1000);
+            var printMinute = Math.floor(j / (60 * 1000));
+            var k = j % (60 * 1000);
+            var printSecond = Math.floor(k / 1000);
+            console.log("所选日期过去了,已经过去了" + printDay + "天" + printHour + "小时" + printMinute + "分钟" + printSecond + "秒")
+            document.getElementById("result-wrapper").innerHTML = "所选日期过去了,已经过去了" + printDay + "天" + printHour + "小时" + printMinute + "分钟" + printSecond + "秒";
         }
-        // document.getElementById("result-wrapper").innerHTML = year + "年";
+
     }
 
     setInterval("NowYear()", 1000);

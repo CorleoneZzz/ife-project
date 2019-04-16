@@ -5,27 +5,29 @@
     <title>Select</title>
 </head>
 <body>
-<select id="year-select" onchange="checkValue1()"></select>
-<select id="month-select" onchange="checkValue2()"></select>
+<select id="year-select"></select>
+<!--<select id="year-select" onchange="checkValue1()"></select>-->
+<!--<select id="month-select" onchange="checkValue2()"></select>-->
+<select id="month-select"></select>
 <select id="day-select"></select>
 <select id="hour-select"></select>
 <select id="minute-select"></select>
 <select id="second-select"></select>
 <p id="result-wrapper"></p>
 <script>
-    function checkValue1() {
-        var index = document.getElementById("year-select").selectedIndex;
-        var value = document.getElementById("year-select").options[index].value;
-        console.log(value)
-        return value
-    }
-
-    function checkValue2() {
-        var index = document.getElementById("month-select").selectedIndex;
-        var value = document.getElementById("month-select").options[index].value;
-        console.log(value)
-        return value
-    }
+    // function checkValue1() {
+    //     var index = document.getElementById("year-select").selectedIndex;
+    //     var value = document.getElementById("year-select").options[index].value;
+    //     console.log(value)
+    //     return value
+    // }
+    //
+    // function checkValue2() {
+    //     var index = document.getElementById("month-select").selectedIndex;
+    //     var value = document.getElementById("month-select").options[index].value;
+    //     console.log(value)
+    //     return value
+    // }
 
     selectYear();
     selectMonth();
@@ -33,6 +35,9 @@
     selectHour();
     selectMinute();
     selectSecond();
+
+    document.getElementById("month-select").addEventListener("change", selectDay);
+    document.getElementById("year-select").addEventListener("change", selectDay);
 
     function selectYear() {
         for (let i = 2016; i <= 2022; i++) {
@@ -52,6 +57,7 @@
         }
     }
 
+    //不加清除方法就会造成日期option叠加
     function removeOption(sel) {
         var select = document.getElementById("day-select");
         for (var i = select.length - 1; i >= 0; i--) {
@@ -62,8 +68,12 @@
 
     function selectDay() {
         removeOption();
-        let year = checkValue1();
-        let month = checkValue2();
+        var indexYear = document.getElementById("year-select").selectedIndex;
+        var year = document.getElementById("year-select").options[indexYear].value;
+        var indexMonth = document.getElementById("month-select").selectedIndex;
+        var month = document.getElementById("month-select").options[indexMonth].value;
+        // let year = checkValue1();
+        // let month = checkValue2();
         if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
             for (let i = 1; i <= 31; i++) {
                 console.log("31天的月份")
@@ -112,7 +122,7 @@
     }
 
     function selectMinute() {
-        for (let i = 0; i <= 60; i++) {
+        for (let i = 0; i <= 59; i++) {
             var node = document.createElement("option");
             var nodes = document.createTextNode(i);
             node.appendChild(nodes);
@@ -121,7 +131,7 @@
     }
 
     function selectSecond() {
-        for (let i = 0; i <= 60; i++) {
+        for (let i = 0; i <= 59; i++) {
             var node = document.createElement("option");
             var nodes = document.createTextNode(i);
             node.appendChild(nodes);
@@ -129,19 +139,49 @@
         }
     }
 
-    // function NowYear() {
-    //     var date = new Date();
-    //     var year = date.getFullYear();
-    //     var value = checkValue();
-    //     if (value > year) {
-    //         console.log("所选日期还没到,还差" + (value - year) + "年");
-    //     } else if (value < year) {
-    //         console.log("所选日期过去了,已经过去了" + (year - value) + "年")
-    //     }
-    //     document.getElementById("result-wrapper").innerHTML = year + "年";
-    // }
-    //
-    setInterval("selectDay()", 1000);
+    function dateFormat(t) {
+        if (t < 10) {
+            return "0" + t;
+        }
+        return t;
+    }
+
+    function NowYear() {
+        var date = new Date();
+        // var year = date.getFullYear();
+        // var month = date.getMonth();
+        // var day = date.getDay();
+        // var hour = date.getHours();
+        // var minute = date.getMinutes();
+        // var second = date.getSeconds();
+        // var nowDate = Date.UTC(year, month, day, hour, minute, second);
+        // var nowDate = date.getTime();
+        console.log(date)
+        var indexYear = document.getElementById("year-select").selectedIndex;
+        var yearSelect = document.getElementById("year-select").options[indexYear].value;
+        var indexMonth = document.getElementById("month-select").selectedIndex;
+        var monthSelect = dateFormat(document.getElementById("month-select").options[indexMonth].value-1);
+        var indexDay = document.getElementById("day-select").selectedIndex;
+        var daySelect = dateFormat(document.getElementById("day-select").options[indexDay].value);
+        var indexHour = document.getElementById("hour-select").selectedIndex;
+        var hourSelect = dateFormat(document.getElementById("hour-select").options[indexHour].value);
+        var indexMinute = document.getElementById("minute-select").selectedIndex;
+        var minuteSelect = dateFormat(document.getElementById("minute-select").options[indexMinute].value);
+        var indexSecond = document.getElementById("second-select").selectedIndex;
+        var secondSelect = dateFormat(document.getElementById("second-select").options[indexSecond].value);
+        var selectDate = new Date(yearSelect, monthSelect, daySelect, hourSelect, minuteSelect, secondSelect);
+        console.log(yearSelect, monthSelect, daySelect, hourSelect, minuteSelect, secondSelect)
+        if (date < selectDate) {
+            let printTime = (selectDate - date) / (24 * 60 * 60 * 1000);
+            console.log("所选日期还没到,还差" + printTime + "天");
+        } else if (date > selectDate) {
+            let printTime = (date - selectDate) / (24 * 60 * 60 * 1000);
+            console.log("所选日期过去了,已经过去了" + printTime + "天")
+        }
+        // document.getElementById("result-wrapper").innerHTML = year + "年";
+    }
+
+    setInterval("NowYear()", 1000);
 </script>
 </body>
 </html>

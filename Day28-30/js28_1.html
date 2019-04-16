@@ -13,26 +13,39 @@
     var postfixList = ['163.com', 'gmail.com', '126.com', 'qq.com', '263.net'];
     //获取用户输入
     var input = document.getElementById("email-input");
-    input.oninput = function getInput() {
+    input.addEventListener("input", getInput);
+
+    function getInput() {
         var inputText = input.value;
         console.log(inputText);
         return inputText;
-    };
+    }
+
+    input.addEventListener("input", listContent);
 
     //将用户输入与邮箱后缀结合
     function listContent() {
-        var inputText = input.value;
+        var inputText = getInput();
+        var showContent=[];
         for (let i = 0; i < postfixList.length; i++) {
-            var showContent = postfixList[i];
+            showContent.push(inputText + postfixList[i]);
             console.log(showContent);
         }
         return showContent;
     }
 
+    input.addEventListener("input", listContentShow);
     //显示到email-sug-wrapper区域
     function listContentShow() {
         var showContent = listContent();
-        // document.getElementById("email-sug-wrapper")
+        var show = document.getElementById("email-sug-wrapper");
+        for (let i = 0; i < postfixList.length; i++) {
+            var node = document.createElement("li");
+            var nodes = document.createTextNode(showContent[i]);
+            console.log(showContent[i]);
+            node.appendChild(nodes);
+            show.appendChild(node);
+        }
     }
 
     //用户不输入提示框不显示

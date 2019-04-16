@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8d8efa47-2875-4ad7-93e1-59fb406ef9a9" name="Default Changelist" comment="button maunal">
       <change beforePath="$PROJECT_DIR$/Day25-27/js25_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Day25-27/js25_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day28-30/js28_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Day28-30/js28_1.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,20 +16,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Day25-27/js25_2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
-              <caret line="183" column="25" selection-start-line="183" selection-start-column="25" selection-end-line="183" selection-end-column="25" />
+            <state relative-caret-position="450">
+              <caret line="30" column="32" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day25-27/test.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Day28-30/js28_1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="61" lean-forward="true" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
+            <state relative-caret-position="406">
+              <caret line="31" column="37" lean-forward="true" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -68,7 +69,6 @@
         <option value="$PROJECT_DIR$/Day17/js17_3.html" />
         <option value="$PROJECT_DIR$/Day19/js19_1.html" />
         <option value="$PROJECT_DIR$/test.html" />
-        <option value="$PROJECT_DIR$/Day28-30/js28_1.html" />
         <option value="$PROJECT_DIR$/Day19/test.html" />
         <option value="$PROJECT_DIR$/Day20-21/js20.html" />
         <option value="$PROJECT_DIR$/Day20-21/js20_2.html" />
@@ -91,6 +91,7 @@
         <option value="$PROJECT_DIR$/Day25-27/js25_3.html" />
         <option value="$PROJECT_DIR$/Day25-27/test.html" />
         <option value="$PROJECT_DIR$/Day25-27/js25_2.html" />
+        <option value="$PROJECT_DIR$/Day28-30/js28_1.html" />
       </list>
     </option>
   </component>
@@ -119,6 +120,11 @@
               <item name="ife-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="ife-project" type="462c0819:PsiDirectoryNode" />
               <item name="Day25-27" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ife-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ife-project" type="462c0819:PsiDirectoryNode" />
+              <item name="Day28-30" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -212,16 +218,15 @@
       <workItem from="1555323535882" duration="4984000" />
       <workItem from="1555376176820" duration="10679000" />
       <workItem from="1555409028760" duration="1920000" />
-      <workItem from="1555418121854" duration="3929000" />
+      <workItem from="1555418121854" duration="9527000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168363000" />
+    <option name="totallyTimeSpent" value="173961000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13812543" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -270,13 +275,6 @@
     <entry file="file://$PROJECT_DIR$/Day17/js17_2.html" />
     <entry file="file://$PROJECT_DIR$/Day17/js17_1.html" />
     <entry file="file://$PROJECT_DIR$/test.html" />
-    <entry file="file://$PROJECT_DIR$/Day28-30/js28_1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="987">
-          <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Day19/test.html" />
     <entry file="file://$PROJECT_DIR$/Day20-21/js20.html" />
     <entry file="file://$PROJECT_DIR$/Day20-21/js20_4.html" />
@@ -430,8 +428,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Day25-27/js25_2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="183" column="25" selection-start-line="183" selection-start-column="25" selection-end-line="183" selection-end-column="25" />
+        <state relative-caret-position="450">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day28-30/js28_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="31" column="37" lean-forward="true" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
         </state>
       </provider>
     </entry>

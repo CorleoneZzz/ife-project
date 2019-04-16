@@ -6,8 +6,6 @@
 </head>
 <body>
 <select id="year-select"></select>
-<!--<select id="year-select" onchange="checkValue1()"></select>-->
-<!--<select id="month-select" onchange="checkValue2()"></select>-->
 <select id="month-select"></select>
 <select id="day-select"></select>
 <select id="hour-select"></select>
@@ -15,19 +13,6 @@
 <select id="second-select"></select>
 <p id="result-wrapper"></p>
 <script>
-    // function checkValue1() {
-    //     var index = document.getElementById("year-select").selectedIndex;
-    //     var value = document.getElementById("year-select").options[index].value;
-    //     console.log(value)
-    //     return value
-    // }
-    //
-    // function checkValue2() {
-    //     var index = document.getElementById("month-select").selectedIndex;
-    //     var value = document.getElementById("month-select").options[index].value;
-    //     console.log(value)
-    //     return value
-    // }
 
     selectYear();
     selectMonth();
@@ -38,6 +23,7 @@
 
     document.getElementById("month-select").addEventListener("change", selectDay);
     document.getElementById("year-select").addEventListener("change", selectDay);
+
 
     function selectYear() {
         for (let i = 2016; i <= 2022; i++) {
@@ -148,14 +134,6 @@
 
     function NowYear() {
         var date = new Date();
-        // var year = date.getFullYear();
-        // var month = date.getMonth();
-        // var day = date.getDay();
-        // var hour = date.getHours();
-        // var minute = date.getMinutes();
-        // var second = date.getSeconds();
-        // var nowDate = Date.UTC(year, month, day, hour, minute, second);
-        // var nowDate = date.getTime();
         console.log(date)
         var indexYear = document.getElementById("year-select").selectedIndex;
         var yearSelect = document.getElementById("year-select").options[indexYear].value;

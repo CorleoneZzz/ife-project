@@ -16,9 +16,8 @@
     input.addEventListener("input", getInput);
 
     function getInput() {
-        var inputText = input.value;
-        console.log(inputText);
-        return inputText;
+        // console.log(inputText);
+        return input.value;
     }
 
     input.addEventListener("input", listContent);
@@ -26,46 +25,58 @@
     //将用户输入与邮箱后缀结合
     function listContent() {
         var inputText = getInput();
-        var showContent=[];
+        var showContent = [];
         for (let i = 0; i < postfixList.length; i++) {
             showContent.push(inputText + postfixList[i]);
-            console.log(showContent);
+            // console.log(showContent);
         }
         return showContent;
     }
 
     input.addEventListener("input", listContentShow);
+
     //显示到email-sug-wrapper区域
     function listContentShow() {
+        removeShow();
         var showContent = listContent();
         var show = document.getElementById("email-sug-wrapper");
         for (let i = 0; i < postfixList.length; i++) {
             var node = document.createElement("li");
             var nodes = document.createTextNode(showContent[i]);
-            console.log(showContent[i]);
+            // console.log(showContent[i]);
             node.appendChild(nodes);
             show.appendChild(node);
+            document.getElementsByTagName("li")[i].style.listStyleType = "none";
+            document.getElementsByTagName("li")[i].style.backgroundColor = "#CCCCCC";
         }
     }
 
-    //用户不输入提示框不显示
-    function showController() {
-        if (input.value !== "") {
-            showStyle();
-        } else {
-            showStyle();
+    function removeShow() {
+        var show = document.getElementsByTagName("li");
+        for (let i = show.length - 1; i >= 0; i--) {
+            show[i].parentNode.removeChild(show[i])
         }
     }
 
-    function showStyle() {
-        listContentShow();
-    }
-
-    function hideStyle() {
-
-    }
-
-    window.onload = showController;
+    // //用户不输入提示框不显示
+    // function showController() {
+    //     if (input.value !== "") {
+    //         showStyle();
+    //     } else {
+    //         showStyle();
+    //     }
+    // }
+    //
+    // function showStyle() {
+    //     listContentShow();
+    // }
+    //
+    // function hideStyle() {
+    //
+    // }
+    //
+    // window.onload = showController;
+    window.onload = removeShow;
 </script>
 </body>
 </html>

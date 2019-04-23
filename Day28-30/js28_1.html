@@ -46,8 +46,19 @@
             // console.log(showContent[i]);
             node.appendChild(nodes);
             show.appendChild(node);
-            document.getElementsByTagName("li")[i].style.listStyleType = "none";
-            document.getElementsByTagName("li")[i].style.backgroundColor = "#CCCCCC";
+            var li = document.getElementsByTagName("li");
+            li[i].style.listStyleType = "none";
+            li[i].style.backgroundColor = "#CCCCCC";
+            li[i].addEventListener("mouseover", function () {
+                li[i].style.backgroundColor = "#FFCC66";
+            });
+            li[i].addEventListener("mouseout", function () {
+                li[i].style.backgroundColor = "#CCCCCC";
+            });
+            li[i].addEventListener("click", function () {
+                document.getElementById("email-input").value = li[i].textContent;
+                removeShow();
+            })
         }
     }
 

@@ -58,15 +58,15 @@
         }
     }
 
-    // //用户不输入提示框不显示
-    // function showController() {
-    //     if (input.value !== "") {
-    //         showStyle();
-    //     } else {
-    //         showStyle();
-    //     }
-    // }
-    //
+    input.addEventListener("input", showController);
+
+    //用户不输入提示框不显示
+    function showController() {
+        if (input.value == "") {
+            removeShow();
+        }
+    }
+
     // function showStyle() {
     //     listContentShow();
     // }
@@ -74,9 +74,8 @@
     // function hideStyle() {
     //
     // }
-    //
-    // window.onload = showController;
-    window.onload = removeShow;
+
+    window.onload = showController;
 </script>
 </body>
 </html>

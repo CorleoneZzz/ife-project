@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8d8efa47-2875-4ad7-93e1-59fb406ef9a9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day12-15/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Day12-15/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Day28-30/js28_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Day28-30/js28_1.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -29,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Day28-30/js28_1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="61" column="64" lean-forward="true" selection-start-line="61" selection-start-column="64" selection-end-line="61" selection-end-column="64" />
+            <state relative-caret-position="613">
+              <caret line="95" column="13" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -53,6 +52,8 @@
       <find>队</find>
       <find>头</find>
       <find>checkValue</find>
+      <find>console</find>
+      <find>index</find>
     </findStrings>
     <replaceStrings>
       <replace>stack</replace>
@@ -109,12 +110,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="ife-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="ife-project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ife-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ife-project" type="462c0819:PsiDirectoryNode" />
+              <item name="Day12-15" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ife-project" type="b2602c69:ProjectViewProjectNode" />
@@ -130,7 +137,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -225,6 +231,8 @@
       <workItem from="1555488632018" duration="1139000" />
       <workItem from="1556014353558" duration="2424000" />
       <workItem from="1556624866721" duration="745000" />
+      <workItem from="1556719705765" duration="5070000" />
+      <workItem from="1556727957008" duration="1175000" />
     </task>
     <task id="LOCAL-00001" summary="js task 28_1 commit">
       <created>1556014646588</created>
@@ -237,13 +245,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186727000" />
+    <option name="totallyTimeSpent" value="192972000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="797" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="797" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13812543" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13742071" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -257,6 +265,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32924962" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -456,8 +465,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Day28-30/js28_1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="61" column="64" lean-forward="true" selection-start-line="61" selection-start-column="64" selection-end-line="61" selection-end-column="64" />
+        <state relative-caret-position="613">
+          <caret line="95" column="13" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="56" />
         </state>
       </provider>
     </entry>

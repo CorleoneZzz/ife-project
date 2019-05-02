@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d8efa47-2875-4ad7-93e1-59fb406ef9a9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Day28-30/rebuild.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Day28-30/js28_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Day28-30/js28_1.html" afterDir="false" />
     </list>
@@ -15,26 +16,34 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day25-27/js25_2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="49" column="25" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Day28-30/js28_1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="613">
-              <caret line="95" column="13" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.47549018">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Day28-30/js28_1.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="224">
+                  <caret line="78" column="25" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="25" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Day28-30/rebuild.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="602">
+                  <caret line="174" column="41" selection-start-line="174" selection-start-column="20" selection-end-line="174" selection-end-column="41" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -52,8 +61,8 @@
       <find>队</find>
       <find>头</find>
       <find>checkValue</find>
-      <find>console</find>
       <find>index</find>
+      <find>console</find>
     </findStrings>
     <replaceStrings>
       <replace>stack</replace>
@@ -93,12 +102,13 @@
         <option value="$PROJECT_DIR$/Day25-27/js25_3.html" />
         <option value="$PROJECT_DIR$/Day25-27/test.html" />
         <option value="$PROJECT_DIR$/Day25-27/js25_2.html" />
+        <option value="$PROJECT_DIR$/Day28-30/rebuild.html" />
         <option value="$PROJECT_DIR$/Day28-30/js28_1.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="y" value="42" />
     <option name="width" value="1440" />
     <option name="height" value="797" />
   </component>
@@ -110,7 +120,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -137,6 +146,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -233,6 +243,7 @@
       <workItem from="1556624866721" duration="745000" />
       <workItem from="1556719705765" duration="5070000" />
       <workItem from="1556727957008" duration="1175000" />
+      <workItem from="1556767471634" duration="4820000" />
     </task>
     <task id="LOCAL-00001" summary="js task 28_1 commit">
       <created>1556014646588</created>
@@ -245,10 +256,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192972000" />
+    <option name="totallyTimeSpent" value="197792000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="797" extended-state="0" />
+    <frame x="0" y="42" width="1440" height="797" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13742071" />
@@ -463,10 +474,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Day28-30/rebuild.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="174" column="41" selection-start-line="174" selection-start-column="20" selection-end-line="174" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Day28-30/js28_1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="95" column="13" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="56" />
+        <state relative-caret-position="224">
+          <caret line="78" column="25" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="25" />
         </state>
       </provider>
     </entry>

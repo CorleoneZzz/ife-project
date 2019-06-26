@@ -14,6 +14,7 @@ a {
 .side-bar {
     float: left;
     width: 20%;
+    position: fixed;
 }
 
 .side-bar > * {
@@ -55,7 +56,7 @@ a {
     color: #454545;
 }
 
-.article-list
+.article-list, .article
 {
     margin-right: 30%;
     background: #fff;
@@ -67,20 +68,20 @@ a {
     margin-bottom: 20px;
 }
 
-.article-list .item .title
+.article-list .item .title, .article .title
 {
     color: #454545;
     font-size: 22px;
     font-weight: 700;
 }
 
-.article-list .item .status
+.article-list .item .status, .article .status
 {
     font-size: 13px;
     color: #ccc;
 }
 
-.article-list .item >*
+.article-list .item > *, .article > *
 {
     margin: 10px 0;
 }

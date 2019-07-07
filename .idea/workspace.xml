@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d8efa47-2875-4ad7-93e1-59fb406ef9a9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Prototype/base.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Prototype/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingMall-Layout/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingMall-Layout/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingMall-Layout/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingMall-Layout/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,19 +18,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ShoppingMall-Layout/css/main.css">
+        <entry file="file://$PROJECT_DIR$/Prototype/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="170" column="23" selection-start-line="170" selection-start-column="23" selection-end-line="170" selection-end-column="23" />
+            <state relative-caret-position="135">
+              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ShoppingMall-Layout/index.html">
+        <entry file="file://$PROJECT_DIR$/Prototype/base.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="562">
-              <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+            <state relative-caret-position="598">
+              <caret line="44" column="3" selection-start-line="44" selection-start-column="3" selection-end-line="44" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -40,10 +40,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="SCSS File" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -109,6 +109,8 @@
         <option value="$PROJECT_DIR$/Blogs-Responsive/css/mobile.css" />
         <option value="$PROJECT_DIR$/ShoppingMall-Layout/css/main.css" />
         <option value="$PROJECT_DIR$/ShoppingMall-Layout/index.html" />
+        <option value="$PROJECT_DIR$/Prototype/index.html" />
+        <option value="$PROJECT_DIR$/Prototype/base.js" />
       </list>
     </option>
   </component>
@@ -135,23 +137,7 @@
             <path>
               <item name="ife-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="ife-project" type="462c0819:PsiDirectoryNode" />
-              <item name="Blogs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ife-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ife-project" type="462c0819:PsiDirectoryNode" />
-              <item name="Blogs-Responsive" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ife-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ife-project" type="462c0819:PsiDirectoryNode" />
-              <item name="ShoppingMall-Layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ife-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ife-project" type="462c0819:PsiDirectoryNode" />
-              <item name="ShoppingMall-Layout" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="Prototype" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -266,6 +252,8 @@
       <workItem from="1561598281897" duration="2413000" />
       <workItem from="1561633268402" duration="728000" />
       <workItem from="1561963475843" duration="6998000" />
+      <workItem from="1562060397616" duration="60000" />
+      <workItem from="1562491695350" duration="1793000" />
     </task>
     <task id="LOCAL-00001" summary="js task 28_1 commit">
       <created>1556014646588</created>
@@ -278,7 +266,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="216864000" />
+    <option name="totallyTimeSpent" value="218717000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="0" />
@@ -296,7 +284,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32924962" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32907802" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -333,8 +321,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="js task 28_1 commit" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Day17/test.html" />
-    <entry file="file://$PROJECT_DIR$/Day17/js17_3.html" />
     <entry file="file://$PROJECT_DIR$/Day17/js17_2.html" />
     <entry file="file://$PROJECT_DIR$/Day17/js17_1.html" />
     <entry file="file://$PROJECT_DIR$/test.html" />
@@ -565,17 +551,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ShoppingMall-Layout/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ShoppingMall-Layout/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
+        <state relative-caret-position="628">
           <caret line="170" column="23" selection-start-line="170" selection-start-column="23" selection-end-line="170" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ShoppingMall-Layout/index.html">
+    <entry file="file://$PROJECT_DIR$/Prototype/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+        <state relative-caret-position="135">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototype/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="44" column="3" selection-start-line="44" selection-start-column="3" selection-end-line="44" selection-end-column="3" />
         </state>
       </provider>
     </entry>

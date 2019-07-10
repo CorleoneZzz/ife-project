@@ -1,3 +1,4 @@
+//原型----构造器（生产对象的函数）
 //如果纯手动的创建对象，那么这样的问题就是，如果我创建一百个，咋办
 // let whh = {
 //     name: "王花花",
@@ -26,13 +27,14 @@
 
 //其实js原生提供了一个更简洁的生产对象方式,this代表了即将生成的对象
 //默认生成了this对象并return了this
-//要用new来召唤，称为构造器或构造函数constructor，首字母一般大写
+//要用new来召唤（实例化instantiation），称为构造器或构造函数constructor，首字母一般大写
 function User(name, age, gender) {
     this.name = name;
     this.age = age;
     this.gender = gender;
 }
 
+//生成对象的过程叫做实例化
 let whh = new User("王花花", 20, "female");
 console.log(whh);
 
